@@ -1,0 +1,38 @@
+baseurl = "http://humboldtux.github.io/"
+title = "Tuto Hugo"
+canonifyurls = true
+paginate = 10
+theme = "startbootstrap-clean-blog"
+languageCode = "en-us"
+copyright = "Code released under the Apache 2.0 license."
+
+[author]
+    name = "Benoît Benedetti"
+
+[params]
+  DateForm = "Mon, Jan 2, 2006"
+  Description = "Un tutoriel adapté pour tout le monde."
+  Author = "Maxime Enrietto"
+  email = "enrietto.maxime@gmail.com"
+  Ganalytics = ""
+  # This will load all the CSS defined in the list
+  # customCSS = ["<absolute path to CSS>", "/static/css/test.css", "<or just load it off the internet>"]
+
+[[params.social]]
+    title = "twitter"
+    url = "https://twitter.com/humboldtux"
+[[params.social]]
+    title = "github"
+    url = "https://github.com/humboldtux"
+[[params.social]]
+    title = "facebook"
+    url = "https://www.facebook.com/FACEBOOKHANDLE"
+
+[[menu.main]]
+  name = "Accueil"
+  url = "/"
+  weight = -200
+[[menu.main]]
+  name = "Les leçons"
+  url = "/post/"
+  weight = -180
