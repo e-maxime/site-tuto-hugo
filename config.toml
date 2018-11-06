@@ -1,13 +1,13 @@
 baseurl = "http://humboldtux.github.io/"
 title = "Tuto Hugo"
 canonifyurls = true
-paginate = 10
+paginate = 4
 theme = "startbootstrap-clean-blog"
-languageCode = "en-us"
+languageCode = "fr"
 copyright = "Code released under the Apache 2.0 license."
 
 [author]
-    name = "Benoît Benedetti"
+    name = "Maxime Enrietto"
 
 [params]
   DateForm = "Mon, Jan 2, 2006"
