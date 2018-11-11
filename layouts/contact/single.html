@@ -20,25 +20,25 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 {{ .Content }}
-                <form name="sentMessage" id="contactForm" novalidate>
+                <form action="https://formspree.io/contact@tuto-hugo.fr" method="POST" />
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
                             <label>Prénom</label>
-                            <input type="text" class="form-control" placeholder="Prénom" id="name" required data-validation-required-message="Votre prénom est requis.">
+                            <input type="text" class="form-control" placeholder="Prénom" id="name" required data-validation-required-message="Votre prénom est requis." name="Nom">
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
                             <label>Adresse e-mail</label>
-                            <input type="email" class="form-control" placeholder="Adresse e-mail" id="email" required data-validation-required-message="Votre adresse e-mail est requise.">
+                            <input type="email" class="form-control" placeholder="Adresse e-mail" id="email" required data-validation-required-message="Votre adresse e-mail est requise." name="Email">
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
                             <label>Message</label>
-                            <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Votre message est requis."></textarea>
+                            <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Votre message est requis." name="Message"></textarea>
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
@@ -53,7 +53,8 @@
             </div>
         </div>
     </div>
-
+<!-- Return to Top -->
+<a href="javascript:" id="top"><i class="icon-chevron-up"></i></a>
 
 
 {{ partial "footer.html" . }}
